@@ -749,7 +749,7 @@ hr {
 
 /* Slim photo banner at the top of the home page */
 .top-banner { position: relative; margin: 0 0 2.5rem; }
-.top-banner img { width: 100%; height: 190px; object-fit: cover; object-position: 50% 62%; }
+.top-banner img { width: 100%; height: 190px; object-fit: cover; object-position: 50% 50%; filter: brightness(1.12) contrast(1.03); }
 .top-banner figcaption {
     position: absolute;
     right: 0.6rem;
