@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/site-draft/assets/css/site.css?v=3">
+    <link rel="stylesheet" href="/site-draft/assets/css/site.css?v=4">
 </head>
 <body>
 <div style="background:#2d3339;color:#fff;font-family:Lato,Arial,sans-serif;font-size:13px;text-align:center;padding:7px 12px;letter-spacing:.03em">DRAFT SITE for experiments &middot; <a href="https://benwansell.github.io/" style="color:#ff8fb0">Go to the real site &rarr;</a></div>
@@ -28,7 +28,7 @@
                 <li><a href="/site-draft/policy/">Policy</a></li>
                 <li><a href="/site-draft/media/">Media</a></li>
                 <li><a href="/site-draft/teaching/">Teaching</a></li>
-                <li><a href="/site-draft/projects/">Projects</a></li>
+                <li><a href="/site-draft/projects/">Lab</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,23 +39,28 @@
             <section class="hero">
                 <div class="hero-text">
                     <p class="kicker">Political economist &middot; University of Oxford</p>
-                    <h1>I study why politics so often fails us, and what we could do about it.</h1>
-                    <p class="hero-roles">Professor of Comparative Democratic Institutions at Nuffield College &middot; Director of the Centre for Advanced Social Science Methods &middot; 2023 BBC Reith Lecturer &middot; Host of BBC Radio 4&rsquo;s <em>Rethink</em></p>
+                    <h1>Why Does Politics Fail and What Can We Do About It?</h1>
+                    <p class="hero-roles">I&rsquo;m Professor of Comparative Democratic Institutions at Nuffield College, Oxford, and Director of the Centre for Advanced Social Science Methods. I gave the BBC&rsquo;s 2023 Reith Lectures, I host <em>Rethink</em> on Radio 4, and I wrote <em>Why Politics Fails</em>.</p>
                     <p class="hero-actions">
                         <a class="btn btn-solid" href="/site-draft/books/">Read <em>Why Politics Fails</em></a>
                         <a class="btn btn-ghost" href="/site-draft/projects/">Explore the Lab</a>
                     </p>
                 </div>
-                <figure class="hero-chart" id="edu-chart">
+                <figure class="hero-chart" id="chart-carousel" tabindex="-1">
                     <figcaption>
                         <span class="chart-title">The education divide</span>
-                        <span class="chart-sub">Reform UK vote share at the 2024 general election, by share of residents with a degree. Each dot is a constituency in England and Wales.</span>
+                        <span class="chart-sub"></span>
                     </figcaption>
                     <div class="chart-frame">
-                        <svg class="chart-svg" viewBox="0 0 560 360" role="img" aria-label="Scatter plot of 552 constituencies: Reform UK's 2024 vote share falls as the share of graduates rises."></svg>
                         <div class="chart-tip" hidden></div>
                     </div>
-                    <p class="chart-note">Sources: 2024 general election results; 2021 Census. Seats Reform did not contest are excluded. <a href="https://benwansell.github.io/constituency-map/">Explore the constituency map &rarr;</a></p>
+                    <div class="chart-controls">
+                        <button type="button" class="chart-prev" aria-label="Previous chart">&#8249;</button>
+                        <span class="chart-dotsnav"></span>
+                        <span class="chart-count" aria-live="polite">1 / 3</span>
+                        <button type="button" class="chart-next" aria-label="Next chart">&#8250;</button>
+                    </div>
+                    <p class="chart-note"></p>
                 </figure>
             </section>
 
@@ -108,6 +113,16 @@
 
             <div class="content content-wide about">
                 <h2 class="band-title">About</h2>
+                <div class="photo-strip">
+                    <figure>
+                        <img src="/site-draft/assets/img/nuffield-college.jpg" alt="The quad at Nuffield College, Oxford" loading="lazy">
+                        <figcaption>Nuffield College, Oxford</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/site-draft/assets/img/oxford-castle.jpg" alt="Oxford Castle" loading="lazy">
+                        <figcaption>Oxford Castle</figcaption>
+                    </figure>
+                </div>
                 <div class="intro">
                     <figure class="intro-photo">
                         <img src="/site-draft/assets/img/ben-ansell-portrait.jpg" alt="Ben W. Ansell" width="800" height="1200">
@@ -160,7 +175,7 @@
         </div>
     </footer>
 
-    <script src="/site-draft/assets/js/site.js?v=3"></script>
-    <script src="/site-draft/assets/js/home-chart.js?v=3"></script>
+    <script src="/site-draft/assets/js/site.js?v=4"></script>
+    <script src="/site-draft/assets/js/home-chart.js?v=5"></script>
 </body>
 </html>
