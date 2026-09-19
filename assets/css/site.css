@@ -777,3 +777,14 @@ hr {
 .hero-roles { font-size: 1.02rem; line-height: 1.75; }
 @media (max-width: 960px) { .hero h1 { font-size: 2.1rem; } }
 @media (max-width: 700px) { .hero h1 { font-size: 1.7rem; } }
+.chart-kicker {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.chart-kicker:hover, .chart-kicker:focus { color: var(--accent-hover); text-decoration: underline; }
