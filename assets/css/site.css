@@ -746,3 +746,34 @@ hr {
 .project-thumb { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; background: #eee; border-bottom: 1px solid var(--card-border); }
 .project-card h3 { font-family: var(--sans); font-size: 1.125rem; margin: 0 0 0.4rem; }
 .project-card .project-body p { font-size: 0.9375rem; line-height: 1.65; margin: 0 0 1rem; flex: 1; }
+
+/* Slim photo banner at the top of the home page */
+.top-banner { position: relative; margin: 0 0 2.5rem; }
+.top-banner img { width: 100%; height: 190px; object-fit: cover; object-position: 50% 62%; }
+.top-banner figcaption {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 2px;
+}
+.home .site-main, .site-main.home { padding-top: 2rem; }
+/* Hero text column: Reith box sits at the bottom, level with the chart */
+.hero { align-items: stretch; }
+.hero-text { display: flex; flex-direction: column; }
+.hero-text .listen-box { margin-top: auto; }
+.hero-roles { margin-bottom: 1.5rem; }
+.photo-strip.single { grid-template-columns: 1fr; }
+.photo-strip.single img { aspect-ratio: 16 / 4.5; }
+@media (max-width: 960px) {
+    .hero-text .listen-box { margin-top: 0.5rem; }
+    .top-banner img { height: 140px; }
+}
+.hero h1 { font-size: 2.8rem; line-height: 1.18; margin-bottom: 1.5rem; }
+.hero-roles { font-size: 1.02rem; line-height: 1.75; }
+@media (max-width: 960px) { .hero h1 { font-size: 2.1rem; } }
+@media (max-width: 700px) { .hero h1 { font-size: 1.7rem; } }
