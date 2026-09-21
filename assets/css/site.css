@@ -861,14 +861,23 @@ hr {
     font-family: var(--sans); font-size: 0.75rem; line-height: 1.4; color: #777;
 }
 .splash-cap[hidden] { display: none; }
-.splash-cap-text { margin: 0; }
+.splash-cap-text { margin: 0; flex: 1 1 auto; min-width: 0; }
 .splash-cap-kicker { font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-right: 0.6rem; }
 .splash-cap-title { color: var(--heading); font-weight: 700; margin-right: 0.6rem; }
-.splash-cap-ctl { display: flex; align-items: center; gap: 1rem; }
+.splash-cap-ctl { display: flex; align-items: center; gap: 1rem; flex: 0 0 auto; margin-left: auto; }
 .splash-dots { display: flex; gap: 7px; }
 .splash-dots button { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%; background: #d3d3d3; cursor: pointer; }
 .splash-dots button[aria-current="true"] { background: var(--accent); }
-.splash-pause { background: none; border: 1px solid #ccc; border-radius: 3px; padding: 0.15rem 0.6rem; font: inherit; color: #666; cursor: pointer; }
+.splash-pause {
+    display: flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; padding: 0;
+    background: none; border: 1px solid #ccc; border-radius: 3px;
+    color: #666; cursor: pointer;
+}
+.splash-pause svg { width: 13px; height: 13px; fill: currentColor; display: block; }
+.splash-pause .icon-play { display: none; }
+.splash-pause[aria-pressed="true"] .icon-pause { display: none; }
+.splash-pause[aria-pressed="true"] .icon-play { display: block; }
 .splash-pause:hover, .splash-pause:focus-visible { border-color: var(--accent); color: var(--accent); }
 
 /* Header: transparent over the splash, white once scrolled past. Only when JS is running;
@@ -891,7 +900,7 @@ hr {
 @media (max-width: 700px) {
     /* The figure fills the splash and sits behind the name, rather than
        being parked below it; the scrim is lightest where the text is. */
-    .splash-bg { width: 100%; right: 0; top: 12%; bottom: auto; height: 62%; }
+    .splash-bg { width: 100%; right: 0; top: 18%; bottom: auto; height: 62%; }
     .splash-slide img { object-position: center; opacity: 0.16; }
     .splash::after { background: linear-gradient(180deg, rgba(249,249,249,0.72) 0%, rgba(249,249,249,0.45) 45%, rgba(249,249,249,0.8) 100%); }
     .splash-inner { min-height: max(370px, 54svh); padding-bottom: 3.75rem; }

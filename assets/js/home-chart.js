@@ -318,14 +318,14 @@
 
         pauseBtn.addEventListener('click', function () {
             paused = !paused;
-            pauseBtn.textContent = paused ? 'Play' : 'Pause';
+            pauseBtn.setAttribute('aria-label', (paused ? 'Play' : 'Pause') + ' the background figures');
             pauseBtn.setAttribute('aria-pressed', paused ? 'true' : 'false');
             start();
         });
         // "See the figure" jumps to the same slide in the carousel below.
         capLink.addEventListener('click', function () { go(now); });
 
-        pauseBtn.textContent = paused ? 'Play' : 'Pause';
+        pauseBtn.setAttribute('aria-label', (paused ? 'Play' : 'Pause') + ' the background figures');
         pauseBtn.setAttribute('aria-pressed', paused ? 'true' : 'false');
         cap.hidden = false;
         show(0);
