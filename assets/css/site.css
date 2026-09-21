@@ -891,10 +891,10 @@ hr {
 @media (max-width: 700px) {
     /* The figure fills the splash and sits behind the name, rather than
        being parked below it; the scrim is lightest where the text is. */
-    .splash-bg { width: 100%; right: 0; top: 0; bottom: auto; height: 62%; }
+    .splash-bg { width: 100%; right: 0; top: 12%; bottom: auto; height: 62%; }
     .splash-slide img { object-position: center; opacity: 0.16; }
     .splash::after { background: linear-gradient(180deg, rgba(249,249,249,0.72) 0%, rgba(249,249,249,0.45) 45%, rgba(249,249,249,0.8) 100%); }
-    .splash-inner { min-height: max(430px, 62svh); padding-bottom: 5rem; }
+    .splash-inner { min-height: max(370px, 54svh); padding-bottom: 3.75rem; }
     /* The hamburger already carries the nav on small screens. */
     .splash-links { display: none; }
     .splash-id { font-size: 1.02rem; margin-bottom: 1.5rem; }
